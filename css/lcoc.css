@@ -7,7 +7,7 @@
 /* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: url("../images/hero_image.png");
+    background-image: url("../images/cool_springs_panarama_crop.jpeg");
 
     /* Set a specific height */
     height: 400px;

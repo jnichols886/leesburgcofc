@@ -1,8 +1,7 @@
 $(function(){
 
-    $(window).on('hashchange', function(e){
+    $(window).on('hashchange', function(evt){
         showByHash( );
-        //  alert(hash+"_div");
     });
 
 
@@ -12,8 +11,8 @@ $(function(){
     function showByHash () {
         let hash = location.hash.replace( /^#/, '' );
         if (hash) {
-            document.getElementById(hash+"_div").scrollIntoView();
             showDiv(hash+"_div");
+            document.getElementById(hash+"_div").scrollIntoView();
         } else {
             showDiv("main_div");
         }
@@ -22,6 +21,7 @@ $(function(){
 
 
     function showDiv(theDiv) {
+        // console.log(theDiv);
         $("#main_div").hide();
         $("#expect_div").hide();
         $("#leadership_div").hide();
