@@ -19,6 +19,10 @@
     position: relative;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Place text in the middle of the image */
 .hero-text {
     text-align: center;
