@@ -1,12 +1,12 @@
 $(function(){
 
     $(window).on('hashchange', function(evt){
-        showByHash( );
+        // showByHash( );
     });
 
 
 
-    showByHash();
+    // showByHash();
 
     function showByHash () {
         let hash = location.hash.replace( /^#/, '' );
