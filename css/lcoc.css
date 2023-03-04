@@ -6,7 +6,6 @@
 
 /* The hero image */
 .hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: url("../images/cool_springs_panarama_crop.jpeg");
 
     /* Set a specific height */
@@ -33,6 +32,27 @@
     color: black;
 }
 
+.hero-ministies-image {
+    background-image: url("../images/ministies_map.jpeg");
+
+    /* Set a specific height */
+    height: 158px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+}
+
 .contact-item-block {
 width: 100%;
      height: 100px;
@@ -53,6 +73,38 @@ width: 100%;
     margin-right: 30px;
 }
 
+.missions-title {
+    font-size: 3rem;
+    color: #ebbd65;
+}
+
+.country-header {
+    font-size: 2rem;
+    color: darkgoldenrod;
+}
+
+
+
+@media screen and (min-width: 480px) {
+    .mission-orient {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .mission-orient {
+        flex-direction: column;
+    }
+}
+
+.school-heading {
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.school-address {
+    font-size: 1.25rem;
+}
 
 @media (min-width: 767.98px) {
     .contact-item-block {
@@ -79,7 +131,7 @@ width: 100%;
 }
 
 .inner-headings {
-    ont-weight: 700;
+    font-weight: 700;
     font-size: 36px;
     line-height: 38px;
     color: white;
@@ -105,3 +157,5 @@ width: 100%;
         border: #d3d3d3 solid 1px;
     }
 }
+
+h3 {text-align: center;}
