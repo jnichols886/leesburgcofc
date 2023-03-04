@@ -45,12 +45,44 @@
     position: relative;
 }
 
+.hero-contact-image {
+    background-image: url("../images/contact-header.jpg");
+
+    /* Set a specific height */
+    height: 158px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .mission-grid {
     display: grid;
     grid-template-columns: repeat(2, 300px);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 50px;
+}
+
+@media screen and (min-width: 480px) {
+    .mission-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .mission-grid {
+        display: flex;
+        flex-direction: column;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+    }
 }
 
 .contact-item-block {
@@ -76,6 +108,11 @@ width: 100%;
 .missions-title {
     font-size: 3rem;
     color: #ebbd65;
+}
+
+.contact-title {
+    font-size: 3rem;
+    color: white;
 }
 
 .country-header {
