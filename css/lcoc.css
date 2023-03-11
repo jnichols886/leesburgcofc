@@ -45,6 +45,19 @@
     position: relative;
 }
 
+.hero-expect-image {
+    background-image: url("../images/clouds_image.jpeg");
+
+    /* Set a specific height */
+    height: 158px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .mission-grid {
     display: grid;
     grid-template-columns: repeat(2, 300px);
