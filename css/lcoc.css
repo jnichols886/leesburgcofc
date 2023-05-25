@@ -156,6 +156,11 @@ width: 100%;
     }
 }
 
+.phone-container {
+    background-color: #ebbd65;
+    color: white;
+}
+
 .inner-headings {
     font-weight: 700;
     font-size: 36px;
